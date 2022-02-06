@@ -1,17 +1,11 @@
 {% extends "base.html" %}
 
-
-{% block head_title %}
+{% block page_title %}
 <title> about </title>
 {% endblock %}
 
-
-{% block body_part_one %}
+{% block page_body %}
 <h2> This is our new about page</h2>
-<p>Lets redirect this page back to itself, <a href="{% url  'about' %}">about</a></p>
-{% endblock %}
-
-
-{% block body_part_two %}
-<p>Lets redirect this page back to, <a href="{% url  'home' %}">home</a></p>
+<p>Lets redirect this page back to</p>
+<a href="{% url  'home' %}" class="btn btn-lg btn-secondary">home</a>
 {% endblock %}
